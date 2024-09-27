@@ -11,6 +11,10 @@
     min-height: 100vh;
 }
   
+.Main {
+    padding-top: 110px;
+}
+
 a {
     color: #453a2c;
     transition: color ease-in-out 0.3s;
