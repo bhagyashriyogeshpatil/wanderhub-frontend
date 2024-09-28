@@ -6,6 +6,10 @@
     padding: 5px;
 }
 
+.Active {
+    font-weight: bold;
+}
+
 .Active i {
     color: #231707;
 }
