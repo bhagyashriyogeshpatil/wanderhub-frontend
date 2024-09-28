@@ -14,7 +14,9 @@ const Post = (props) => {
         profile_image,
         comments_count,
         likes_count,
+        savedposts_count,
         like_id,
+        savedpost_id,
         title,
         content,
         image,
@@ -52,6 +54,38 @@ const Post = (props) => {
                 results: prevPosts.results.map((post) => {
                     return post.id === id
                         ? { ...post, likes_count: post.likes_count - 1, like_id: null }
+                        : post;
+                }),
+            }));
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
+    const handleSavePost = async () => {
+        try {
+            const { data } = await axiosRes.post("/savedposts/", { post: id });
+            setPosts((prevPosts) => ({
+                ...prevPosts,
+                results: prevPosts.results.map((post) => {
+                    return post.id === id
+                        ? { ...post, savedposts_count: post.savedposts_count + 1, savedpost_id: data.id }
+                        : post;
+                }),
+            }));
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
+    const handleRemoveSavedPost = async () => {
+        try {
+            await axiosRes.delete(`/savedposts/${savedpost_id}/`);
+            setPosts((prevPosts) => ({
+                ...prevPosts,
+                results: prevPosts.results.map((post) => {
+                    return post.id === id
+                        ? { ...post, savedposts_count: post.savedposts_count - 1, savedpost_id: null }
                         : post;
                 }),
             }));
@@ -121,6 +155,45 @@ const Post = (props) => {
                         <i className="far fa-comments" />
                     </Link>
                     {comments_count}
+
+                    {is_owner ? (
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={
+                                <Tooltip>
+                                    You can't save your own posts, they're saved on your profile!
+                                </Tooltip>
+                            }
+                        >
+                            <i className="fa-regular fa-bookmark" />
+                        </OverlayTrigger>
+                    ) : savedpost_id ? (
+                        <span onClick={handleRemoveSavedPost}>
+                            <OverlayTrigger
+                                placement="top"
+                                overlay={<Tooltip>Remove post from saved posts!</Tooltip>}
+                            >
+                                <i className="fa-solid fa-bookmark" />
+                            </OverlayTrigger>
+                        </span>
+                    ) : currentUser ? (
+                        <span onClick={handleSavePost}>
+                            <OverlayTrigger
+                                placement="top"
+                                overlay={<Tooltip>Click to save this post!</Tooltip>}
+                            >
+                                <i className="fa-regular fa-bookmark" />
+                            </OverlayTrigger>
+                        </span>
+                    ) : (
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={<Tooltip>Log in to save posts!</Tooltip>}
+                        >
+                            <i className="fa-regular fa-bookmark" />
+                        </OverlayTrigger>
+                    )}
+                    {savedposts_count}
                 </div>
             </Card.Body>
         </Card>
