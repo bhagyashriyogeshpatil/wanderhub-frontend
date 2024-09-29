@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Media } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 import Avatar from "../../components/Avatar";
 import { MoreDropdown } from "../../components/MoreDropdown";
@@ -18,6 +19,8 @@ const Comment = (props) => {
         updated_at,
         content,
         id,
+        commentreaction_id,
+        commentreactions_count,
         setPost,
         setComments,
     } = props;
@@ -42,7 +45,41 @@ const Comment = (props) => {
                 ...prevComments,
                 results: prevComments.results.filter((comment) => comment.id !== id),
             }));
-        } catch (err) { }
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
+    const handleCommentReaction = async () => {
+        try {
+            const { data } = await axiosRes.post("/commentreactions/", { comment: id });
+            setComments((prevComments) => ({
+                ...prevComments,
+                results: prevComments.results.map((comment) => {
+                    return comment.id === id
+                        ? { ...comment, commentreactions_count: comment.commentreactions_count + 1, commentreaction_id: data.id }
+                        : comment;
+                }),
+            }));
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
+    const handleDeleteCommentReaction = async () => {
+        try {
+            await axiosRes.delete(`/commentreactions/${commentreaction_id}`);
+            setComments((prevComments) => ({
+                ...prevComments,
+                results: prevComments.results.map((comment) => {
+                    return comment.id === id
+                        ? { ...comment, commentreactions_count: comment.commentreactions_count - 1, commentreaction_id: null }
+                        : comment;
+                }),
+            }));
+        } catch (err) {
+            console.log(err);
+        }
     };
 
     return (
@@ -55,6 +92,30 @@ const Comment = (props) => {
                 <Media.Body className="align-self-center ml-2">
                     <span className={styles.Owner}>{owner}</span>
                     <span className={styles.Date}>{updated_at}</span>
+                    {is_owner ? (
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={<Tooltip>You can't react to your own comment!</Tooltip>}
+                        >
+                            <i className={`${styles.ThumbsUp} fa-regular fa-thumbs-up`} />
+                        </OverlayTrigger>
+                    ) : commentreaction_id ? ( 
+                        <span onClick={handleDeleteCommentReaction}>
+                            <i className={`${styles.ThumbsUp} fa-solid fa-thumbs-up`} />
+                        </span>
+                    ) : currentUser ? (
+                        <span onClick={handleCommentReaction}>
+                            <i className={`${styles.ThumbsUp} fa-regular fa-thumbs-up`} />
+                        </span>
+                    ) : (
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={<Tooltip>Log in to react to comments!</Tooltip>}
+                        >
+                            <i className={`${styles.Heart} far fa-heart`} />
+                        </OverlayTrigger>
+                    )}
+                    {commentreactions_count}
                     {showEditForm ? (
                         <CommentEditForm
                             id={id}

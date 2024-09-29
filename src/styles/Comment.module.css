@@ -7,3 +7,16 @@
 .Date {
     color: #bdb9b3;
 }
+
+.ThumbsUp {
+    color: #f85032;
+    font-size: 20px;
+}
+
+.ThumbsUp:hover {
+    color: #2142b2;
+}
+
+.ThumbsUpOutline:hover {
+    color: #f85032;
+}
