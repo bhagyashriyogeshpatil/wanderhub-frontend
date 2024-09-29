@@ -1,4 +1,5 @@
-.Button {
+.Button,
+.FollowButton {
     font-size: 1rem;
     font-weight: bold;
     align-self: center;
@@ -42,27 +43,34 @@
 
 .BlueOutline,
 .Blue:hover {
-    /* border: 1px solid #2142b2; */
     background-color: #ffffff;
     color: #2142b2;
 }
 
-.Black,
-.BlackOutline:hover {
-    /* background-color: #242a3d;
-    color: white; */
-    background-color: #242a3d;
-    color: aliceblue;
+.Brown,
+.BrownOutline:hover {
+    background-color: #453a2c;
+    color: #ffffff;
 }
 
-.Black:hover,
-.BlackOutline {
-    /* background-color: #dadadf;
-    color: #242a3d;
-    border-color: #242a3d; */
-    background-color: aliceblue;
-    color: #242a3d;
+.BrownOutline,
+.Brown:hover {
+    background-color: #ffffff;
+    color: #453a2c;
 }
+
+.FollowButton:hover:active {
+    background-color: #453a2c !important;
+}
+
+.FollowButton:active {
+    background-color: #453a2c !important;
+}
+
+.FollowButton:focus {
+    background-color: #453a2c;
+}
+
 
 .Bright {
     background-color: #2ed9ff;
