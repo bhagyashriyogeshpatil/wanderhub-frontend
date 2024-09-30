@@ -60,7 +60,10 @@ function PostCreateForm() {
         formData.append("content", content);
         formData.append("place", place);
         formData.append("region", region);
-        formData.append("image", imageInput.current.files[0]);
+        if (imageInput.current.files[0]) {
+            formData.append("image", imageInput.current.files[0]);
+        }
+        // formData.append("image", imageInput.current.files[0]);
 
         try {
             const { data } = await axiosReq.post("/posts/", formData);
@@ -96,6 +99,8 @@ function PostCreateForm() {
                     as="textarea"
                     rows={6}
                     name="content"
+                    className={`${styles.placeholder}`}  
+                    placeholder="Share a bit about your travel experiences..."
                     value={content}
                     onChange={handleChange}
                 />
@@ -111,6 +116,8 @@ function PostCreateForm() {
                 <Form.Control
                     type="text"
                     name="place"
+                    className={`${styles.placeholder}`}  
+                    placeholder="e.g., London Eye, UK"
                     value={place}
                     onChange={handleChange}
                 />
