@@ -2,6 +2,7 @@ import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { CurrentUserProvider } from "../../contexts/CurrentUserContext";
 import NavBar from "../NavBar";
+import { act } from 'react';
 
 test("renders NavBar", () => {
   render(
@@ -38,7 +39,10 @@ test("renders Sign in and Sign up buttons again on log out", async () => {
   );
 
   const signOutLink = await screen.findByRole("link", { name: "Sign out" });
-  fireEvent.click(signOutLink);
+  act(() => {
+    fireEvent.click(signOutLink); // Wrap fireEvent in act to avoid warnings
+  });
+
 
   await waitFor(() => {   
     const signInLink = screen.getByRole("link", { name: "Sign in" });
