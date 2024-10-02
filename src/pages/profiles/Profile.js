@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 // CSS imports
 import styles from "../../styles/Profile.module.css";
 import btnStyles from "../../styles/Button.module.css";
-// // Context imports
+// Context imports
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { useSetProfileData } from '../../contexts/ProfileDataContext';
 // Custom component imports

@@ -11,7 +11,7 @@ import styles from '../../styles/Post.module.css';
 // Custom component imports
 import { MoreDropdown } from "../../components/MoreDropdown";
 import Avatar from "../../components/Avatar";
-// Context
+// Context imports
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 // Axios instance import for API requests
 import { axiosRes } from "../../api/axiosDefaults";
