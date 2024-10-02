@@ -1,8 +1,14 @@
+// React and routing imports
 import React from "react";
-import { Container } from "react-bootstrap";
+// Bootstrap component imports
+import Container from "react-bootstrap/Container";
+// CSS imports
 import appStyles from "../../App.module.css";
+// Custom component imports
 import Asset from "../../components/Asset";
+// Context imports
 import { useProfileData } from "../../contexts/ProfileDataContext";
+// Component imports
 import Profile from "./Profile";
 
 const PopularProfiles = ({ mobile }) => {

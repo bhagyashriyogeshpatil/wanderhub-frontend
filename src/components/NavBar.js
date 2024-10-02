@@ -1,15 +1,24 @@
+// React and routing imports
 import React from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap';
-import logo from '../assets/logo.png';
-import styles from '../styles/NavBar.module.css';
 import { NavLink } from "react-router-dom";
+// Bootstrap component imports
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+// CSS imports
+import styles from '../styles/NavBar.module.css';
+import logo from '../assets/logo.png';
+// Context and hooks imports
 import {
   useCurrentUser,
   useSetCurrentUser,
 } from "../contexts/CurrentUserContext";
-import Avatar from "./Avatar";
-import axios from "axios";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
+// Custom component imports
+import Avatar from "./Avatar";
+// Axios instance import for API requests
+import axios from "axios";
+// Utility function import
 import { removeTokenTimestamp } from '../utils/utils';
 
 const NavBar = () => {

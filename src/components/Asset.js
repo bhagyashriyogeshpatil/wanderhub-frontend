@@ -1,5 +1,8 @@
+// React and routing imports
 import React from "react";
-import { Spinner } from "react-bootstrap";
+// Bootstrap component imports
+import Spinner from "react-bootstrap/Spinner";
+// CSS imports
 import styles from "../styles/Asset.module.css";
 
 const Asset = ({ spinner, src, message }) => {

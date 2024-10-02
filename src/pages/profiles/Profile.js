@@ -1,11 +1,16 @@
+// React and routing imports
 import React from "react";
+import { Link } from "react-router-dom";
+// Bootstrap component imports
+import Button from "react-bootstrap/Button";
+// CSS imports
 import styles from "../../styles/Profile.module.css";
 import btnStyles from "../../styles/Button.module.css";
+// // Context imports
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { Link } from "react-router-dom";
-import Avatar from "../../components/Avatar";
-import { Button } from "react-bootstrap";
 import { useSetProfileData } from '../../contexts/ProfileDataContext';
+// Custom component imports
+import Avatar from "../../components/Avatar";
 
 const Profile = (props) => {
   const { profile, mobile, imageSize = 55 } = props;

@@ -1,11 +1,20 @@
+// React and routing imports
 import React from 'react';
-import styles from '../../styles/Post.module.css';
-import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { Card, Media, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Link, useHistory } from "react-router-dom";
-import Avatar from "../../components/Avatar";
-import { axiosRes } from "../../api/axiosDefaults";
+// Bootstrap component imports
+import Card from 'react-bootstrap/Card';
+import Media from 'react-bootstrap/Media';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
+// CSS imports
+import styles from '../../styles/Post.module.css';
+// Custom component imports
 import { MoreDropdown } from "../../components/MoreDropdown";
+import Avatar from "../../components/Avatar";
+// Context
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
+// Axios instance import for API requests
+import { axiosRes } from "../../api/axiosDefaults";
 
 
 const Post = (props) => {

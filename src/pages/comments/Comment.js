@@ -1,14 +1,19 @@
+// React and routing imports
 import React, { useState } from "react";
-import { Media } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { OverlayTrigger, Tooltip } from 'react-bootstrap';
-
+// Bootstrap component imports
+import Media from "react-bootstrap/Media";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
+// CSS imports
+import styles from "../../styles/Comment.module.css";
+// Custom component imports
 import Avatar from "../../components/Avatar";
 import { MoreDropdown } from "../../components/MoreDropdown";
 import CommentEditForm from "./CommentEditForm";
-
-import styles from "../../styles/Comment.module.css";
+// Context imports
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
+// Axios instance import for API requests
 import { axiosRes } from "../../api/axiosDefaults";
 
 const Comment = (props) => {
