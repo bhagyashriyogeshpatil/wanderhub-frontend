@@ -1,6 +1,10 @@
+// React and hooks imports
 import { createContext, useContext, useEffect, useState } from "react";
+// Axios import for API requests
 import { axiosReq, axiosRes  } from "../api/axiosDefaults";
+// Context imports
 import { useCurrentUser } from "../contexts/CurrentUserContext";
+// Utility function imports
 import { followHelper, unfollowHelper } from "../utils/utils";
 
 const ProfileDataContext = createContext();

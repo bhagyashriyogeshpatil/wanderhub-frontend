@@ -1,21 +1,23 @@
+// React and hooks imports
 import React, { useEffect, useState } from "react";
-
+import { useHistory, useParams } from "react-router-dom";
+// Bootstrap component imports
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-
-import { useHistory, useParams } from "react-router-dom";
-import { axiosRes } from "../../api/axiosDefaults";
+// CSS imports
+import btnStyles from "../../styles/Button.module.css";
+import appStyles from "../../App.module.css";
+// Context imports
 import {
   useCurrentUser,
   useSetCurrentUser,
 } from "../../contexts/CurrentUserContext";
-
-import btnStyles from "../../styles/Button.module.css";
-import appStyles from "../../App.module.css";
+// Axios import for API requests
+import { axiosRes } from "../../api/axiosDefaults";
 
 const UsernameForm = () => {
   const [username, setUsername] = useState("");

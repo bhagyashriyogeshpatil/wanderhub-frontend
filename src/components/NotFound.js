@@ -1,7 +1,10 @@
+// React imports
 import React from 'react';
-import NoResults from "../assets/no-results.png";
+// CSS imports
 import styles from "../styles/NotFound.module.css";
+// Custom component and assets imports 
 import Asset from "./Asset";
+import NoResults from "../assets/no-results.png";
 
 const NotFound = () => {
   return (

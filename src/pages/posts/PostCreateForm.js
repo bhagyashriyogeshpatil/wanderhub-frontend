@@ -1,6 +1,7 @@
+// React and routing imports
 import React, { useRef, useState } from "react";
 import { useHistory } from "react-router";
-
+// Bootstrap component imports
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
@@ -8,14 +9,16 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 import Image from 'react-bootstrap/Image';
-
-import Upload from "../../assets/upload.png";
-
+// CSS imports
 import styles from "../../styles/PostCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
+// Custom component and assets imports
 import Asset from "../../components/Asset";
+import Upload from "../../assets/upload.png";
+// Axios import for API requests
 import { axiosReq } from "../../api/axiosDefaults";
+// Hook import for redirection
 import { useRedirect } from "../../hooks/useRedirect";
 
 function PostCreateForm() {
@@ -117,7 +120,7 @@ function PostCreateForm() {
                     type="text"
                     name="place"
                     className={`${styles.placeholder}`}  
-                    placeholder="e.g., London Eye, UK"
+                    placeholder="e.g., London, UK"
                     value={place}
                     onChange={handleChange}
                 />

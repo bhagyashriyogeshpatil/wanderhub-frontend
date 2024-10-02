@@ -1,3 +1,4 @@
+// Import rest for mocking API requests
 import { rest } from "msw";
 
 const baseURL = 'https://wanderhub-api-backend-8af792a9ebf9.herokuapp.com/';

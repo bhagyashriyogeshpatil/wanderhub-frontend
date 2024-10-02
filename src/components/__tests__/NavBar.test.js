@@ -1,7 +1,11 @@
+// React and testing library imports
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
+// Context imports
 import { CurrentUserProvider } from "../../contexts/CurrentUserContext";
+// Custom component import
 import NavBar from "../NavBar";
+// React hooks import
 import { act } from 'react';
 
 test("renders NavBar", () => {

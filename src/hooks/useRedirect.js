@@ -1,4 +1,6 @@
+// Axios import for API requests
 import axios from "axios";
+// React and hooks imports
 import { useEffect } from "react";
 import { useHistory } from "react-router";
 

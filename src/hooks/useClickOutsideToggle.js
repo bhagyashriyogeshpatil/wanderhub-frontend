@@ -1,3 +1,4 @@
+// React and hooks imports
 import { useEffect, useRef, useState } from "react";
 
 const useClickOutsideToggle = () => {
