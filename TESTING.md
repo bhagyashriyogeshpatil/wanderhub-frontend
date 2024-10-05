@@ -88,3 +88,13 @@ I validated my HTML pages using the [W3 Nu HTML Checker]( https://validator.w3.o
 [Saved Posts](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2Fsavedposts)
 
 *<span style="color: blue;">[Back to Content](#content)</span>*
+
+### CSS Validation
+All CSS files in this project have been successfully validated using the official [W3C Jigsaw CSS]( https://jigsaw.w3.org/css-validator/).
+
+No errors were found during the validation process, ensuring that the CSS code is error-free and follows the official CSS standards.
+
+![css-validation](documentation/testing/css-validation.png)
+
+
+*<span style="color: blue;">[Back to Content](#content)</span>*
