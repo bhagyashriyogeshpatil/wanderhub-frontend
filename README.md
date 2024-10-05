@@ -344,6 +344,39 @@ Below each post, there are icons for liking, commenting, and saving posts.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
+#### **Liked Posts**
+
+- *As a logged-in user*, I can like other users' posts so that I can show appreciation for content and its authors. (User Story#18)
+- *As a logged-in user*, I want to see the posts I’ve liked so that I can easily find my favorite content. (User Story#30)
+- *As a logged-in user*, I want to unlike a post so that I can remove my like if I no longer want to support it. (User Story#19)
+
+- Like Post Option
+
+![like_post_option](documentation/docs_images/like_post_option.png)
+
+- Liked Post Page view
+
+![liked_post_view](documentation/docs_images/liked_post_view.png)
+
+- Unlike Post Option
+
+![unlike_post_option](documentation/docs_images/unlike_post_option.png)
+
+- Users can like posts and see the total number of likes on all pages of the website.
+- Unauthorized Users:
+  - If a user is not logged in, the like icon will be hollow, and a message will ask them to log in to like the post.
+- Authorized Users: 
+  - Logged-in users can like posts. If they haven’t liked a post before, the icon will be hollow. When they click it, the icon will turn solid red, and the total number of likes will go up by one.
+  - If a user owns the post, the like icon will show a message saying they can’t like their own posts.
+- Liked Posts Page: 
+  - All the posts a user has liked will be shown in a list on the Liked page. This page can be accessed by logged-in users through the navigation bar.
+  - On the Liked page, liked posts will have the like icon in solid red.
+- Unlike Functionality:
+  - Logged-in users can also unlike posts they have liked. The unlike icon will be solid red. If the user clicks it, the icon will change back to hollow, and the total likes will go down by one.
+  - Posts that users unlike will be removed from their Liked page.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
 ## Testing
 
 This section explains how to test the application and documents any bugs found during development, along with their fixes. It helps keep track of the application's quality and improvements.
