@@ -382,8 +382,6 @@ Below each post, there are icons for liking, commenting, and saving posts.
 - *As a logged-in user*, I want to mark posts as saved so that I can save and easily find them later. (User Story#26)
 - As a logged-in user, I want to remove posts from my saved list so that they are no longer displayed on my saved posts page. (User Story#27)
 
-(User Story#18)
-
 - Save Post Option
 
 ![save_post_option](documentation/docs_images/save_post_option.png)
@@ -418,6 +416,8 @@ Below each post, there are icons for liking, commenting, and saving posts.
 - *As a user*, I want to view all the posts by a specific user so that I can catch up on their latest content or decide whether to follow them. (User Story#33)
 - *As a user*, I can keep scrolling through posts without clicking "next page" so that I can easily access more content. (User Story#38)
 
+- Search bar feature
+
 ![search_bar_feature](documentation/docs_images/search_bar_feature.png)
 
 - The search bar is available for all users on the home page. 
@@ -432,8 +432,28 @@ Below each post, there are icons for liking, commenting, and saving posts.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
+#### **Add Post**
 
+- As a logged-in user, I want to create posts so that I can share my travel experience with the world. (User Story#12)
 
+- Add Post option
+
+![add_post_option](documentation/docs_images/add_post_option.png)
+
+- Add Post Form
+
+![add_post_form](documentation/docs_images/add_post_form.png)
+
+- The Add Post Page feature allows logged-in users to create and share travel posts. This is a key part of the website, enabling users to share their travel experiences with the community.
+- The Add Post icon is in the navigation bar and is only available to logged-in users.
+Clicking the Add Post icon takes users to the post creation form.
+- The post creation form includes the following fields:
+  - Title: This field is required, and users must enter a title for their post.
+  - Image Upload: This field is also required, and users must upload an image related to their travel experience. If users do not upload an image, a default post image will be used.
+  - Content: Users must provide additional information about their travel experience in this required field.
+  - Place: This required field requires users to specify the place related to their post.
+  - Region: This field is optional. Users can select a region from a dropdown menu, which defaults to Europe. If users do not choose a different region, their post will automatically be placed under Europe, but it can be changed by picking from the available options.
+- This feature lets users share their travel experiences and connect with others in the community. It’s important for the website because it encourages contributions and exploration of travel content.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
