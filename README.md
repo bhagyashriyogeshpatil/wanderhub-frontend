@@ -412,6 +412,31 @@ Below each post, there are icons for liking, commenting, and saving posts.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
+#### **Search Posts**
+
+- *As a user*, I want to search for posts using keywords so that I can find and learn more about posts and profiles that interest me. (User Story#17)
+- *As a user*, I want to view all the posts by a specific user so that I can catch up on their latest content or decide whether to follow them. (User Story#33)
+- *As a user*, I can keep scrolling through posts without clicking "next page" so that I can easily access more content. (User Story#38)
+
+![search_bar_feature](documentation/docs_images/search_bar_feature.png)
+
+- The search bar is available for all users on the home page. 
+- Users can search for posts using keywords, the author’s username, post title, region, or place.
+- These search options make it easy for users to find specific travel posts without having to scroll through all the content. The goal is to provide a smooth and efficient user experience, allowing users to quickly find the posts they want.
+- Since the website is about travel, users can search by region and place to find destinations they are interested in. This helps them plan their trips and discover new travel spots, which is the main goal of the website.
+- Unauthorized Users:
+  - Users who are not logged in can still access the search bar on the home page to find posts. However, they may have limited options compared to logged-in users.
+- For Authorized Users:
+  - Logged-in users can use the search bar on other pages, such as the Liked Posts, Feed, and Saved Posts pages, to find relevant content easily.
+  - They can filter searches by username to see the most recent posts from users they follow, helping them stay updated with new content.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+
+
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
 ## Testing
 
 This section explains how to test the application and documents any bugs found during development, along with their fixes. It helps keep track of the application's quality and improvements.
