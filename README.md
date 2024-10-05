@@ -26,7 +26,7 @@ The frontend, built with React, is designed to be clean, responsive, and user-fr
       - [Milestones Overview](#milestones-overview)
 - [The Structure Plane](#the-structure-plane)
   - [Current Features](#current-features)
-
+- [Testing](#testing)
 ---
 
 ## Introduction
@@ -247,3 +247,11 @@ All features have been implemented with user stories in mind.
   - Username - for authorized users
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
+
+## Testing
+
+This section explains how to test the application and documents any bugs found during development, along with their fixes. It helps keep track of the application's quality and improvements.
+
+Please refer to [TESTING.md](/TESTING.md) for details.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*  
