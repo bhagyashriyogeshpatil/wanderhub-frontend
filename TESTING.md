@@ -9,7 +9,10 @@ Return back to the [README.md](README.md) file.
     - [Test environment](#test-environment)
     - [Browser compatibility](#browser-compatibility)
     - [Responsiveness](#responsiveness)
-
+- [Validator Testing](#validator-testing)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
+    - [JavaScript Validation](#javascript-validation)
 ---
 ## Testing overview & environment
 
@@ -54,9 +57,34 @@ The following breakpoints were considered during testing:
 | Extra Large       | `xl`       | `≥ 1200px`        |
 | Extra Extra Large | `xxl`      | `≥ 1400px`        |
 
+*<span style="color: blue;">[Back to Content](#content)</span>*
 
+## Validator Testing
 
+### HTML Validation
 
+I validated my HTML pages using the [W3 Nu HTML Checker]( https://validator.w3.org/nu/). They came back with no errors, only pointers about redundant trailing slashes left by React.
 
+[Posts Page]( https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2F)
+
+[Post Page]( https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2Fposts%2F16)
+
+[Profile]( https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2Fprofiles%2F3)
+
+[Edit profile]( https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2Fprofiles%2F1%2Fedit)
+
+[Sign Up]( https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2Fsignup)
+
+[Sign In]( https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2Fsignin)
+
+[PostCreateForm]( https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2Fposts%2Fcreate)
+
+[PostEditForm]( https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2Fposts%2F10%2Fedit)
+
+[Feed Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2Ffeed)
+
+[Liked Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2Fliked)
+
+[Saved Posts](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2Fsavedposts)
 
 *<span style="color: blue;">[Back to Content](#content)</span>*
