@@ -248,7 +248,7 @@ All features have been implemented with user stories in mind.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
 
-#### Sign in / Sign up / Sign out
+#### **Sign in / Sign up / Sign out**
 
 - The Sign Up, Sign In, and Sign Out features allow users to register, log in, and log out of the website. These features enable users to explore and interact with all content, including posts, comments, and user profiles, while having full control over their own content.
 - *As a user*, I want create a new account so that I can access all features available to signed-up users. (User Story#6)
@@ -275,17 +275,46 @@ All features have been implemented with user stories in mind.
 ![sign_in_feature_mobile](documentation/docs_images/sign_in_mobile.png)
 
 - The Sign In feature lets registered users log in to access all the features available to authorized users. 
-- Registered users can log in with their email and password.
+- Registered users can sign in with their email and password.
 - If the user isn't registered, a Sign Up link is available on the sign-in page.
-- Clear feedback is given when login details are incorrect.
+- Clear feedback is given when sign-in details are incorrect.
 
 - *As a user*, I want to maintain my logged-in status until I choose to log out so that my user experience remains uninterrupted. (User Story#9)
 
 ![sign_out_feature_image](documentation/docs_images/sign_out_feature_image.png)
 
-- Users can log out whenever they choose, ending their session and ensuring their account remains secure.
+- Users can sign out whenever they choose, ending their session and ensuring their account remains secure.
 - The goal of this feature is to allow users to perform CRUD functionality on their content and access other features of the website as long as they choose not to sign out. This gives users complete control, making it easy for them to navigate pages without being signed out automatically.
 - When users register or sign in, they can create travel posts (with CRUD functionality), add comments to those posts (with CRUD functionality), react to comments, like or dislike posts from other users, save their favorite posts, follow or unfollow other users, and access their own content and profile (where they can also use CRUD functionality). This lets them explore all the website features made for them.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+#### **Home Page (Posts Page)**
+- *As a user*, I want to see a list of the most recent posts so that I can browse and stay updated with the latest content. (User Story#16)
+- As a user, I can keep scrolling through posts without clicking "next page" so that I can easily access more content. (User Story#38)
+- *As a user*, I want to view all the posts by a specific user so that I can catch up on their latest content or decide whether to follow them. (User Story#33)
+- *As a user*, I want to navigate through pages quickly without page refreshes so that I can view content seamlessly. (User Story#5)
+- Home Page for Desktop (Unauthorized Users):
+
+![home_page_desktop_unauthorised_users](documentation/docs_images/home_page_desktop_unauthorised_users.png)
+
+- Home Page for Desktop (Authorized Users)
+
+![home_page_desktop_authorised_users](documentation/docs_images/home_page_desktop_authorised_users.png)
+
+- Home Page for Mobile (Unauthorized/authorized Users):
+
+![home_page_mobile_all_users](documentation/docs_images/home_page_mobile_all_users.png)
+
+- The home page is open to all users, whether they are logged in or not, when they enter the website. 
+- It shows a list of all travel posts, with the newest ones at the top. This way, users can easily see the latest updates.
+- Each post includes an image, title, content, place, region, the date it was created or updated, and the name and avatar of the person who posted it.
+Below each post, there are icons for liking, commenting, and saving posts.
+- A search bar is available for users to find specific posts easily, and a sidebar showcases popular profiles to follow.
+- Users can view all posts from a specific user by clicking on their profile avatar in individual posts or from the sidebar. This will take user to that person’s profile, where all their posts are listed, starting with the most recent ones.
+- The home page uses infinite scrolling, so users can keep scrolling through posts without having to click through pages.
+- The website allows users to move between different pages easily, so they don't have to wait for the page to reload every time they click on something. This makes the whole experience smooth and enjoyable.
+
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
