@@ -117,7 +117,7 @@ const Comment = (props) => {
                             placement="top"
                             overlay={<Tooltip>Log in to react to comments!</Tooltip>}
                         >
-                            <i className={`${styles.Heart} far fa-heart`} />
+                            <i className={`${styles.Heart} far fa-thumbs-up`} />
                         </OverlayTrigger>
                     )}
                     {commentreactions_count}

@@ -315,6 +315,32 @@ Below each post, there are icons for liking, commenting, and saving posts.
 - The home page uses infinite scrolling, so users can keep scrolling through posts without having to click through pages.
 - The website allows users to move between different pages easily, so they don't have to wait for the page to reload every time they click on something. This makes the whole experience smooth and enjoyable.
 
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+#### **Post Detail**
+- *As a user*, I want to click on a post to see its details so that I can learn more about it. (User Story#13)
+
+- Post Detail View For Unauthorised Users
+![post_detail_view_unauthorised](documentation/docs_images/post_detail_view_unauthorised.png)
+
+- Post Detail View For Authorised Users
+![post_detail_view_authorised](documentation/docs_images/post_detail_view_authorised.png)
+
+- The Post feature allows users to view detailed travel posts shared by others. The post view is the same on the home page and the post detail view page, with extra features available for logged-in users. 
+- Users can click on a post image from the home page to go directly to the post detail view page, making navigation easy and hassle-free.
+- For Unauthorised Users:
+  - When unauthorized users view a post detail page, they can see the like, comment, and and saved post icons.
+  - If they hover over these icons, a tooltip message appears, prompting them to log in to perform any actions.
+  - Comments made on the post are displayed under the detail view if there are any.
+- For Authorised Users:
+  - Authorized users have full access to all features in the post detail view.
+  - The post detail view includes:
+    - The author's username and avatar.
+    - An image of the travel post.
+    - The post's title and content.
+    - The place and region of the post.
+    - Icons to save the post, like the post, along with the number of comments, likes, and saved posts the post has received.
+    - A comments section with icons for comment reactions on individual comments.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
