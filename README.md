@@ -377,6 +377,41 @@ Below each post, there are icons for liking, commenting, and saving posts.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
+#### **Saved Posts**
+
+- *As a logged-in user*, I want to mark posts as saved so that I can save and easily find them later. (User Story#26)
+- As a logged-in user, I want to remove posts from my saved list so that they are no longer displayed on my saved posts page. (User Story#27)
+
+(User Story#18)
+
+- Save Post Option
+
+![save_post_option](documentation/docs_images/save_post_option.png)
+
+- Saved Post Page view
+
+![saved_post_view](documentation/docs_images/saved_post_view.png)
+
+- Remove Saved Post Option
+
+![remove_save_post_option](documentation/docs_images/remove_save_post_option.png)
+
+- Users can save posts and see how many times a post has been saved across all pages of the website.
+- Unauthorized Users:
+  - If a user isn’t logged in, the save icon will be hollow, and a message will ask them to log in to save the post.
+- Authorized Users:
+  - Logged-in users can save posts. If they haven’t saved a post before, the icon will be hollow. Clicking it will turn the icon solid, and the save count will increase by one.
+  - If the user owns the post, they will see a message saying they can’t save their own posts.
+- Saved Posts Page:
+  - All saved posts are shown in a list on the Saved Posts page. Logged-in users can access this page from the navigation bar.
+  - Posts on this page will have a solid save icon, showing they’ve been saved.
+- Remove Saved Post:
+  - Logged-in users can remove saves from posts they’ve saved. The save icon will be solid, and clicking it will make it hollow again. The save count will decrease by one.
+  - Posts that are removed from saved posts will no longer appear on the Saved Posts page.
+- If a user has already saved a post, hovering over the save icon will show a message saying "remove post from saved posts."
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
 ## Testing
 
 This section explains how to test the application and documents any bugs found during development, along with their fixes. It helps keep track of the application's quality and improvements.
