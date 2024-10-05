@@ -24,6 +24,9 @@ The frontend, built with React, is designed to be clean, responsive, and user-fr
     - [Agile Planning](#agile-planning)
       - [User Stories and Management](#user-stories-and-management)
       - [Milestones Overview](#milestones-overview)
+- [The Structure Plane](#the-structure-plane)
+  - [Current Features](#current-features)
+
 ---
 
 ## Introduction
@@ -184,5 +187,63 @@ The development of Wander Hub is organized into six key milestones, each focusin
   - User Story 36: View Most Followed Profiles
   - User Story 38: Infinite Scroll for Posts
   - User Story 39: Infinite Scroll for Comments
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
+
+## The Structure Plane
+
+### Current Features
+All features have been implemented with user stories in mind.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
+
+#### Favicon
+- *As a user*, I want a favicon icon to be shown in the browser tab for the website so that I can easily identify and navigate to the site when I have multiple tabs open. (User Story#3)
+
+![favicon_image](documentation/docs_images/favicon_image.png)
+
+- The favicon is shown in the browser tab, helping users easily identify and navigate back to the website when multiple tabs are open.
+- The favicon has been selected with the project theme in mind, representing the WanderHub concept. It features a starting point and a destination connected by a route.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
+
+#### Navigation Menu
+- As a user, I want to view a navigation bar on every page so that I can easily navigate between pages without having to search for navigation options. (User Story#4)
+- As a user, I want to navigate through pages quickly without page refreshes so that I can view content seamlessly. (User Story#5)
+- As a user, I want to easily tell if I am logged in so that I know whether I need to log in or can access logged-in features. (User Story#8)
+
+- Navbar for Desktop (Unauthorized Users)
+
+![Navbar_desktop_unauthorised_users](documentation/docs_images/navbar_desktop_unauthorised_users.png)
+
+- Navbar for Desktop (Authorized Users)
+
+![Navbar_desktop_authorised_users](documentation/docs_images/navbar_desktop_authorised_users.png)
+
+- Navbar for Mobile (Unauthorized Users)
+
+![Navbar_mobile_unauthorised_users](documentation/docs_images/navbar_mobile_unauthorised_users.png)
+
+- Navbar for Mobile (Authorized Users)
+
+![Navbar_mobile_authorised_users](documentation/docs_images/navbar_mobile_authorised_users.png)
+
+- The navigation menu is designed to make it easy for users to move around the website. The navigation bar looks the same on every page for a uniform experience. On smaller screens, it changes to a hamburger menu for easy access.
+- When a user is logged in, their profile avatar and username are displayed in the navigation bar. This feature adds a personalized touch to each visit, helping users feel more connected to their account.
+- The main purpose of the navigation menu is to help users move easily around the website. They can quickly reach different pages without getting lost.
+- The shown username and profile picture let users know they are logged in, giving them confidence about their account status.
+- The navigation options change based on whether the user is logged in or not. This keeps the menu simple and easy to use without making it too complicated.
+- The currently active page is clearly marked, so users know where they are.
+- The following options are available based on the user's logged-in status:
+  - Home - for all users
+  - Sign Up - for unauthorized users
+  - Sign In - for unauthorized users
+  - Sign Out - for authorized users
+  - Add Post - for authorized users
+  - Feed - for authorized users
+  - Liked - for authorized users
+  - Saved Posts - for authorized users
+  - Profile Avatar - for authorized users
+  - Username - for authorized users
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
