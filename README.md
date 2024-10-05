@@ -197,7 +197,7 @@ All features have been implemented with user stories in mind.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
 
-#### Favicon
+#### **Favicon**
 - *As a user*, I want a favicon icon to be shown in the browser tab for the website so that I can easily identify and navigate to the site when I have multiple tabs open. (User Story#3)
 
 ![favicon_image](documentation/docs_images/favicon_image.png)
@@ -207,10 +207,10 @@ All features have been implemented with user stories in mind.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
 
-#### Navigation Menu
-- As a user, I want to view a navigation bar on every page so that I can easily navigate between pages without having to search for navigation options. (User Story#4)
-- As a user, I want to navigate through pages quickly without page refreshes so that I can view content seamlessly. (User Story#5)
-- As a user, I want to easily tell if I am logged in so that I know whether I need to log in or can access logged-in features. (User Story#8)
+#### **Navigation Menu**
+- *As a user*, I want to view a navigation bar on every page so that I can easily navigate between pages without having to search for navigation options. (User Story#4)
+- *As a user*, I want to navigate through pages quickly without page refreshes so that I can view content seamlessly. (User Story#5)
+- *As a user*, I want to easily tell if I am logged in so that I know whether I need to log in or can access logged-in features. (User Story#8)
 
 - Navbar for Desktop (Unauthorized Users)
 
@@ -247,6 +247,47 @@ All features have been implemented with user stories in mind.
   - Username - for authorized users
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
+
+#### Sign in / Sign up / Sign out
+
+- The Sign Up, Sign In, and Sign Out features allow users to register, log in, and log out of the website. These features enable users to explore and interact with all content, including posts, comments, and user profiles, while having full control over their own content.
+- *As a user*, I want create a new account so that I can access all features available to signed-up users. (User Story#6)
+- Sign Up page for Desktop :
+
+![sign_up_feature_desktop](documentation/docs_images/sign_up_desktop.png)
+
+- Sign Up page for Mobile :
+
+![sign_up_feature_mobile](documentation/docs_images/sign_up_mobile.png)
+
+- The Sign Up feature lets new users create an account to access all the features of the website. Registered users can log in to use personalized services.
+- The sign-up page works on both large and small screens, adapting to mobile, tablet, and desktop devices.
+- New users can create an account by filling out the form with their name, email, and password.
+- If the user is already registered, they can use a convenient link to go to the login page.
+
+- *As a user*, I want to sign in to the app so that I can access functionality available only to logged-in users. (User Story#7)
+- Sign In page for Desktop :
+
+![sign_in_feature_desktop](documentation/docs_images/sign_in_desktop.png)
+
+- Sign In page for Mobile :
+
+![sign_in_feature_mobile](documentation/docs_images/sign_in_mobile.png)
+
+- The Sign In feature lets registered users log in to access all the features available to authorized users. 
+- Registered users can log in with their email and password.
+- If the user isn't registered, a Sign Up link is available on the sign-in page.
+- Clear feedback is given when login details are incorrect.
+
+- *As a user*, I want to maintain my logged-in status until I choose to log out so that my user experience remains uninterrupted. (User Story#9)
+
+![sign_out_feature_image](documentation/docs_images/sign_out_feature_image.png)
+
+- Users can log out whenever they choose, ending their session and ensuring their account remains secure.
+- The goal of this feature is to allow users to perform CRUD functionality on their content and access other features of the website as long as they choose not to sign out. This gives users complete control, making it easy for them to navigate pages without being signed out automatically.
+- When users register or sign in, they can create travel posts (with CRUD functionality), add comments to those posts (with CRUD functionality), react to comments, like or dislike posts from other users, save their favorite posts, follow or unfollow other users, and access their own content and profile (where they can also use CRUD functionality). This lets them explore all the website features made for them.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
 ## Testing
 
