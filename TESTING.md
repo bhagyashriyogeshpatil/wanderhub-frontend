@@ -63,7 +63,8 @@ The following breakpoints were considered during testing:
 
 ### HTML Validation
 
-I validated my HTML pages using the [W3 Nu HTML Checker]( https://validator.w3.org/nu/). They came back with no errors, only pointers about redundant trailing slashes left by React.
+- I validated HTML pages using the [W3 Nu HTML Checker]( https://validator.w3.org/nu/). 
+- They came back with no errors, only pointers about redundant trailing slashes left by React.
 
 [Posts Page]( https://validator.w3.org/nu/?doc=https%3A%2F%2Fwanderhub-frontend-56da935583f2.herokuapp.com%2F)
 
@@ -90,11 +91,30 @@ I validated my HTML pages using the [W3 Nu HTML Checker]( https://validator.w3.o
 *<span style="color: blue;">[Back to Content](#content)</span>*
 
 ### CSS Validation
-All CSS files in this project have been successfully validated using the official [W3C Jigsaw CSS]( https://jigsaw.w3.org/css-validator/).
-
-No errors were found during the validation process, ensuring that the CSS code is error-free and follows the official CSS standards.
+- All CSS files in this project have been successfully validated using the official [W3C Jigsaw CSS]( https://jigsaw.w3.org/css-validator/).
+- No errors were found during the validation process, ensuring that the CSS code is error-free and follows the official CSS standards.
 
 ![css-validation](documentation/testing/css-validation.png)
 
+*<span style="color: blue;">[Back to Content](#content)</span>*
+
+### JavaScript Validation
+
+- This project uses ESLint to keep JavaScript code consistent and well-written. ESLint finds mistakes and checks that the code follows set rules, making it easier to read and less likely to have problems.
+
+- ESLint is automatically integrated into the project via Create React App. The configuration is defined in `package.json`:
+    ```python
+    "eslintConfig": {
+    "extends": [
+        "react-app",
+        "react-app/jest"
+    ]
+    }
+    ```
+    - `react-app`: Provides default ESLint rules for React apps.
+    - `react-app/jest`: Includes additional rules for testing with Jest.
+- As code is written in the editor (like Gitpod), ESLint shows errors and warnings directly in the code, helping to fix issues immediately.
+- When `npm start` is run, ESLint checks the code again and prevents the app from building if there are any critical errors.
+- Throughout the development of Wander Hub, ESLint has been very helpful in finding and fixing code issues. This has kept the codebase clean and in line with good JavaScript practices. When the code compiles without problems, it runs on the development server smoothly, without errors or warnings.
 
 *<span style="color: blue;">[Back to Content](#content)</span>*
