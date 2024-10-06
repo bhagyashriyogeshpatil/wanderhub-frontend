@@ -488,7 +488,7 @@ Clicking the Add Post icon takes users to the post creation form.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
-#### Comment
+#### **Comment**
 - *As a logged-in user*, I want to add comments to posts so that I can share my thoughts and engage with the community. (User Story#20)
 
 - Add Comment Form
@@ -509,7 +509,7 @@ Clicking the Add Post icon takes users to the post creation form.
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
 
-#### View Comment
+#### **View Comment**
 - *As a user*, I want to read comments on posts so that I can see what other users think about them.(User Story#21)
 - *As a user*, I can keep scrolling through comments without clicking "next page" so that I can easily view more comments. (User Story#39)
 
@@ -523,7 +523,7 @@ Clicking the Add Post icon takes users to the post creation form.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
-#### Edit or Delete Comment
+#### **Edit or Delete Comment**
 - *As a logged-in user who owns a comment*, I want to be able to edit my comment so that I can fix or update it.(User Story#22)
 - *As the owner of a comment*, I want to be able to delete my comment so that I can remove comments I no longer want to be posted.(User Story#23)
 
@@ -545,7 +545,7 @@ Clicking the Add Post icon takes users to the post creation form.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
-#### Comment Reaction
+#### **Comment Reaction**
 - *As a logged-in user*, I can like other users' comments by clicking a "thumbs-up" icon so that I can show appreciation for their opinions.(User Story#28)
 
 - Comment Reaction Option
@@ -560,6 +560,8 @@ Clicking the Add Post icon takes users to the post creation form.
   - When they click it, it turns solid red, and the number of reactions increases by one.
 - The reaction option is visible for users who own the comment, but an overlay message indicates that they cannot react to their own comments.
 - Users can also remove their reaction by clicking on the solid red icon, which will turn hollow again, decreasing the reaction count by one. This functionality allows users to express their opinions on comments actively and engage with the community.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
