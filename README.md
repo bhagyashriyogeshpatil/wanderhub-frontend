@@ -511,6 +511,7 @@ Clicking the Add Post icon takes users to the post creation form.
 
 #### View Comment
 - *As a user*, I want to read comments on posts so that I can see what other users think about them.(User Story#21)
+- *As a user*, I can keep scrolling through comments without clicking "next page" so that I can easily view more comments. (User Story#39)
 
 - Comments List
 
@@ -518,6 +519,7 @@ Clicking the Add Post icon takes users to the post creation form.
 
 - All users, regardless of their login status, can view comments on posts. 
 - Clicking the comments icon on a post takes them to the post detail page, where all comments are displayed. This allows users to see how others have reacted to the post and understand various perspectives.
+- Users can keep scrolling through comments without having to click "next page," making it easy to view more comments.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
@@ -540,6 +542,24 @@ Clicking the Add Post icon takes users to the post creation form.
 - For logged-in users, clicking on the three-dot menu next to their comment reveals options to edit or delete it.
   - Edit Icon: Clicking the edit icon opens a form on the same page, pre-filled with the user’s original comment, allowing them to make changes and save them.
   - Delete Icon: Clicking the trash-bin icon deletes the comment and takes the user back to the previous page. This functionality enhances user experience by keeping actions on the same page and avoiding unnecessary navigation, ensuring users remain engaged with the content.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+#### Comment Reaction
+- *As a logged-in user*, I can like other users' comments by clicking a "thumbs-up" icon so that I can show appreciation for their opinions.(User Story#28)
+
+- Comment Reaction Option
+
+![comment_reaction_option](documentation/docs_images/comment_reaction_option.png)
+
+- The Comment Reaction feature allows users to show appreciation for comments made on posts by others. This feature enhances user engagement within the community and encourages interaction with content.
+- Unauthorized Users: 
+  - Users who are not logged in will see a hollow reaction icon. A message will prompt them to log in to react to comments.
+- Authorized Users: 
+  - For users who are logged in, the reaction icon is active. If they haven’t reacted to a comment yet, it will be shown as a hollow icon. 
+  - When they click it, it turns solid red, and the number of reactions increases by one.
+- The reaction option is visible for users who own the comment, but an overlay message indicates that they cannot react to their own comments.
+- Users can also remove their reaction by clicking on the solid red icon, which will turn hollow again, decreasing the reaction count by one. This functionality allows users to express their opinions on comments actively and engage with the community.
 
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
