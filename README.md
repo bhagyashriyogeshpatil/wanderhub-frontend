@@ -710,6 +710,18 @@ Clicking the Add Post icon takes users to the post creation form.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
+#### **Not Found Page**
+
+- The Not Found Page feature helps users when trying to access a page that doesn't exist or is unavailable, such as entering the wrong address. When this happens, a "Page Not Found" message appears, letting users know the page can’t be found.
+- Users get a clear message indicating that the page they are looking for doesn’t exist.
+- The navigation bar remains visible, allowing users to easily browse other parts of the website.
+- This feature aims to improve user experience by keeping users engaged and encouraging continued exploration of the site instead of leaving.
+- Overall, the Not Found Page feature ensures a smooth experience, even when errors occur.
+
+![notfound_page_image](documentation/docs_images/notfound_page_image.png)
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
 ## Testing
 
 This section explains how to test the application and documents any bugs found during development, along with their fixes. It helps keep track of the application's quality and improvements.
