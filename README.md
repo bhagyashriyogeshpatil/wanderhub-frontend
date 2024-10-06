@@ -488,6 +488,62 @@ Clicking the Add Post icon takes users to the post creation form.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
+#### Comment
+- *As a logged-in user*, I want to add comments to posts so that I can share my thoughts and engage with the community. (User Story#20)
+
+- Add Comment Form
+
+![add_comment_form](documentation/docs_images/add_comment_form.png)
+
+- The Comment feature allows users to engage with posts by sharing their thoughts and showing appreciation. Users can view comments on each post and interact with the community of travelers.
+- When users click the comments icon on a post, they are directed to the post detail view. 
+- Authorized Users: 
+  - If a user is logged in, they will see a comment form to add their comments. 
+  - After submitting a comment, it will appear below the form, and the comment count for the post increases by one. 
+  - If there are no comments yet, a message will encourage users to be the first to comment.
+- Unauthorized Users: 
+  - If a user is not logged in, they can see existing comments but will not have access to the comment form. 
+  - If no comments are present, they will be prompted to log in to leave a comment. 
+  - This feature enables users to engage with the community and participate in conversations about the posts.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+
+#### View Comment
+- *As a user*, I want to read comments on posts so that I can see what other users think about them.(User Story#21)
+
+- Comments List
+
+![comments_list_view](documentation/docs_images/comments_list_view.png)
+
+- All users, regardless of their login status, can view comments on posts. 
+- Clicking the comments icon on a post takes them to the post detail page, where all comments are displayed. This allows users to see how others have reacted to the post and understand various perspectives.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+#### Edit or Delete Comment
+- *As a logged-in user who owns a comment*, I want to be able to edit my comment so that I can fix or update it.(User Story#22)
+- *As the owner of a comment*, I want to be able to delete my comment so that I can remove comments I no longer want to be posted.(User Story#23)
+
+- Comment Edit Delete Page
+
+![comment_edit_delete_page](documentation/docs_images/comment_edit_delete_page.png)
+
+- Comment Edit and Delete Icons:
+
+![comment_edit_delete_option](documentation/docs_images/comment_edit_delete_option.png)
+
+- Comment Edit Form:
+
+![comment_edit_form](documentation/docs_images/comment_edit_form.png)
+
+- For logged-in users, clicking on the three-dot menu next to their comment reveals options to edit or delete it.
+  - Edit Icon: Clicking the edit icon opens a form on the same page, pre-filled with the user’s original comment, allowing them to make changes and save them.
+  - Delete Icon: Clicking the trash-bin icon deletes the comment and takes the user back to the previous page. This functionality enhances user experience by keeping actions on the same page and avoiding unnecessary navigation, ensuring users remain engaged with the content.
+
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
 ## Testing
 
 This section explains how to test the application and documents any bugs found during development, along with their fixes. It helps keep track of the application's quality and improvements.
