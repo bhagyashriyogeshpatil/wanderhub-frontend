@@ -457,6 +457,37 @@ Clicking the Add Post icon takes users to the post creation form.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
+#### **Edit or Delete a Post**
+
+- *As a logged-in user*, I want to be able to edit my own posts so that I can make changes or updates after they are created. (User Story#14)
+- *As a logged-in user*, I want to be able to delete my own posts so that I can remove any posts I no longer want to share. (User Story#15)
+
+- Posts Edit Delete Page
+
+![posts_edit_delete_page](documentation/docs_images/posts_edit_delete_page.png)
+
+- Post Edit and Delete Icons:
+
+![edit_delete_posts_option](documentation/docs_images/edit_delete_posts_option.png)
+
+- Post Edit Form:
+
+![post_edit_form](documentation/docs_images/post_edit_form.png)
+
+- The Edit or Delete a Post feature allows logged-in users to manage their travel posts. This feature is only available for posts created by the user, making it easy to update or remove content as needed.
+- When a user clicks on the three-dot menu for their post, they can see options to edit or delete it.
+- Edit Icon:
+  - Clicking the edit icon takes the user to a pre-populated post form that looks the same as the post creation form.
+  - All fields are filled with the user's previously entered information, allowing them to make any necessary changes.
+  - After editing, the user can save the changes to update their post.
+- Delete Icon:
+  - Clicking the trash-bin icon will delete the post.
+  - After deletion, the user is taken back to the previous page they were on.
+  - This feature allows users to remove posts they no longer wish to share or keep on their profile.
+- Both the add post and edit forms have a Cancel button. If clicked, the user will go back to the page they were on before. This feature ensures a smooth navigation experience, helping users avoid confusion while using the website.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
 ## Testing
 
 This section explains how to test the application and documents any bugs found during development, along with their fixes. It helps keep track of the application's quality and improvements.
