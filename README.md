@@ -564,12 +564,12 @@ Clicking the Add Post icon takes users to the post creation form.
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
 #### **Profile**
-- As a user, I want to see a list of the most followed profiles so that I can identify which profiles are popular. (User Story#36)
-- As a user, I want to view detailed statistics about a specific user, including their bio and activity stats (such as number of posts, followers, and following), so that I can learn more about them. (User Story#32)
-- As a user, I want to view other users profiles so that I can see their posts and learn more about them. (User Story#31)
-- As a user, I want to have a default profile image so that I don’t need to upload my own immediately. (User Story#37)
-- As a logged-in user (profile owner), I want to update my username and password so that I can change my display name and maintain the security of my profile. (User Story#35)
-- As a logged-in user, I want to edit my profile details so that I can keep my information up to date. (User Story#34)
+- *As a user*, I want to see a list of the most followed profiles so that I can identify which profiles are popular. (User Story#36)
+- *As a user*, I want to view detailed statistics about a specific user, including their bio and activity stats (such as number of posts, followers, and following), so that I can learn more about them. (User Story#32)
+- *As a user*, I want to view other users profiles so that I can see their posts and learn more about them. (User Story#31)
+- *As a user*, I want to have a default profile image so that I don’t need to upload my own immediately. (User Story#37)
+- *As a logged-in user (profile owner)*, I want to update my username and password so that I can change my display name and maintain the security of my profile. (User Story#35)
+- *As a logged-in user*, I want to edit my profile details so that I can keep my information up to date. (User Story#34)
 
 - Popular profiles for Desktop (Unauthorized Users)
 
@@ -643,6 +643,27 @@ Clicking the Add Post icon takes users to the post creation form.
 - Change Password: 
   - Users can update their password with validation for errors such as mismatched passwords or insufficient length.
 - Users are directed to forms with pre-populated fields for easy editing and can cancel changes to return to their profile.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+#### **Feed Page**
+- *As a logged-in user*, I want to follow other users so that I can view their posts in my feed and stay updated with their latest updates. (User Story#24)
+- *As a logged-in user*, I want to unfollow other users so that I can remove their posts from my feed. (User Story#25)
+- *As a logged-in user*, I want to see posts from the users I follow so that I can stay updated with their latest content. (User Story#29)
+
+<details><summary>Feed Page (Authorised User)</summary>
+
+![feed_page_autherised](documentation/docs_images/feed_page_autherised.jpg)
+</details>
+
+- The Feed Feature lets users see a list of posts from the people they follow. It helps users stay updated on content that interests them.
+- Users only see posts from the accounts they follow, making the feed relevant to their interests.
+- When a user follows someone, that person’s posts immediately appear in their feed.
+- If a user unfollows someone, those posts are removed from their feed right away.
+- The number of followers updates instantly when a user follows or unfollows someone, keeping everything up to date.
+- A sidebar showing popular profiles is available on every page, making it easy to discover and follow new users.
+- The layout of the feed adjusts to fit different screen sizes, ensuring a good experience on all devices.
+- The follow/unfollow buttons are only visible to logged-in users, so only they can interact with the profiles they want.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
