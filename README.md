@@ -264,7 +264,7 @@ All features have been implemented with user stories in mind.
 
 - The Sign Up feature lets new users create an account to access all the features of the website. Registered users can log in to use personalized services.
 - The sign-up page works on both large and small screens, adapting to mobile, tablet, and desktop devices.
-- New users can create an account by filling out the form with their name, email, and password.
+- New users can create an account by filling out the form with their name, password, and confirm password.
 - If the user is already registered, they can use a convenient link to go to the login page.
 
 - *As a user*, I want to sign in to the app so that I can access functionality available only to logged-in users. (User Story#7)
