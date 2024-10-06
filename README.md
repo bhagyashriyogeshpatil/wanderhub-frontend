@@ -563,6 +563,86 @@ Clicking the Add Post icon takes users to the post creation form.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
+#### **Profile**
+- As a user, I want to see a list of the most followed profiles so that I can identify which profiles are popular. (User Story#36)
+- As a user, I want to view detailed statistics about a specific user, including their bio and activity stats (such as number of posts, followers, and following), so that I can learn more about them. (User Story#32)
+- As a user, I want to view other users profiles so that I can see their posts and learn more about them. (User Story#31)
+- As a user, I want to have a default profile image so that I don’t need to upload my own immediately. (User Story#37)
+- As a logged-in user (profile owner), I want to update my username and password so that I can change my display name and maintain the security of my profile. (User Story#35)
+- As a logged-in user, I want to edit my profile details so that I can keep my information up to date. (User Story#34)
+
+- Popular profiles for Desktop (Unauthorized Users)
+
+![popular_profiles_desktop_unauthorized_user](documentation/docs_images/popular_profiles_desktop_unauthorized_user.png)
+
+- Popular profiles for Desktop (Authorized Users)
+
+![popular_profiles_desktop_authorized_user](documentation/docs_images/popular_profiles_desktop_authorized_user.png)
+
+- Popular profiles for Mobile (Unauthorized/Authorized Users)
+
+![popular_profiles_mobile_all_user](documentation/docs_images/popular_profiles_mobile_all_user.png)
+
+- The Profile Feature allows users to create and manage their personal profiles in the app. It helps users connect and interact with each other.
+- The sidebar displays a list of popular user profiles accessible on every page, sorted by the number of followers.
+- Users can click on a profile avatar to navigate to that user’s profile.
+- The sidebar's layout adapts to different screen sizes for optimal viewing.
+- Logged-in users can follow or unfollow others. This includes:
+  - Follow Button: Users can follow other users from the popular profiles sidebar and their profiles. User cannot follow their own profile.
+  - Unfollow Button: Users can unfollow someone to stop seeing their posts in their Feed.
+  - The follower and following numbers update instantly.
+
+- User Profile Statistics
+
+![user_profile_statistics](documentation/docs_images/user_profile_statistics.png)
+
+- User Profile Page (Authorised User)
+
+![user_profile_page](documentation/docs_images/user_profile_page.png)
+
+- User Profile Page (Unauthorised User)
+
+![user_profile_page_unauthorised](documentation/docs_images/user_profile_page_unauthorised.png)
+
+- Users can view other profiles by clicking on the avatar or username, which directs them to the user's profile page.
+- The profile page displays:
+  - User's name, avatar, and bio.
+  - Total number of posts, followers, and following count.
+- Posts made by the user can also be viewed on their profile page.
+
+- User Default Profile Image
+
+![user_default_profile_image](documentation/docs_images/user_default_profile_image.png)
+
+- A default profile image is provided upon registration, which users can choose to keep or update for personalization.
+
+- User Profile Edit Page (Authorised User)
+
+![user_profile_edit_page](documentation/docs_images/user_profile_page.png)
+
+- User Profile Edit Form (Authorized User)
+
+![user_profile_edit_form](documentation/docs_images/user_profile_edit_form.png)
+
+- Username Edit Form (Authorised User)
+
+![username_edit_form](documentation/docs_images/username_edit_form.png)
+
+- Password Edit Form (Authorised User)
+
+![user_password_edit_form](documentation/docs_images/user_password_edit_form.png)
+
+- Users can manage their profile information only if they are logged in and are the profile owner.
+- Edit Profile: 
+  - Users can click the three-dot menu on their profile to access options such as:
+    - Edit bio and avatar
+    - Change username
+    - Change password
+- Change Username: 
+  - Users can change their username via the designated icon; changes will reflect throughout the website.
+- Change Password: 
+  - Users can update their password with validation for errors such as mismatched passwords or insufficient length.
+- Users are directed to forms with pre-populated fields for easy editing and can cancel changes to return to their profile.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
