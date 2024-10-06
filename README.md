@@ -687,6 +687,29 @@ Clicking the Add Post icon takes users to the post creation form.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
+#### **No Results Found**
+
+- The No Results Found feature helps users by letting them know when there's no content available based on their actions.
+- Users will see a "No results found" message in the following situations:
+  - Search Query Mismatch: When their search doesn’t match any keywords or there are no posts related to their search.
+  - Empty Feed Page: On the feed page, if the user hasn't followed anyone or if the people they follow haven't shared any posts.
+  - No Saved Posts: On the saved posts page, if they haven't saved any posts.
+  - Empty Liked Page: If the user hasn’t liked any posts, they will see a message saying there are no liked posts.
+  - User Profile: On their profile page, if they haven't made any posts yet.
+- This feature ensures users are not left confused while browsing the website. The messages provide guidance on what to do next, such as changing their search, following users, or creating posts. By giving this feedback, users can understand the current state of content available to them and know how to engage more with the platform.
+
+![noresults_found_image_search](documentation/docs_images/noresults_found_image_search.png)
+
+![noresults_found_image_feed_page](documentation/docs_images/noresults_found_image_feed_page.png)
+
+![noresults_found_image_saved_page](documentation/docs_images/noresults_found_image_saved_page.png)
+
+![noresults_found_image_liked_page](documentation/docs_images/noresults_found_image_liked_page.png)
+
+![noresults_found_image_profile_page](documentation/docs_images/noresults_found_image_profile_page.png)
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
 ## Testing
 
 This section explains how to test the application and documents any bugs found during development, along with their fixes. It helps keep track of the application's quality and improvements.
