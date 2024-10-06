@@ -16,7 +16,7 @@ Return back to the [README.md](README.md) file.
 - [Manual test](#manual-test)
     - [Application Functionality Testing](#application-functionality-testing)
     - [Error Handling Testing](#error-handling-testing )
-
+- [Automated Testing](#automated-testing)
 ---
 ## Testing overview & environment
 
@@ -200,5 +200,19 @@ The following breakpoints were considered during testing:
 |Save Own Post|Try to save their own post|User is prevented from saving their own post, and a tooltip appears stating this action is not allowed|Tooltip displayed: "You cannot save your own post"|
 |Comment on Own Post|Try to comment on their own post|User is prevented from commenting on their own post, and a tooltip appears stating this action is not allowed|Tooltip displayed: "You cannot comment on your own post"|
 |React to Own Comment|Try to react to their own comment|User is prevented from reacting to their own comment, and a tooltip appears stating this action is not allowed|Tooltip displayed: "You cannot react to your own comment|
+
+*<span style="color: blue;">[Back to Content](#content)</span>*
+
+## Automated Testing
+
+### Unit Testing
+
+- Automated testing has only been done for the navbar component. For the tests, I used the CI Moments Walkthrough as a reference.
+- This project uses Jest and React Testing Library for unit testing components. The tests are located in the `__tests__` folder within the `src/components` directory.
+- The `NavBar.test.js` file contains several tests for the `NavBar` component. The first test checks that the "Sign in" link is present in the navigation bar. The second test ensures that the profile avatar appears for a logged-in user. Finally, the third test verifies that the "Sign in" and "Sign up" links reappear after a user logs out.
+- To run the tests, use the command `npm test` in the terminal. This will execute all tests in the project and display the results.
+- Link to test files can be found here: [NavBar](https://github.com/bhagyashriyogeshpatil/wanderhub-frontend/blob/main/src/components/__tests__/NavBar.test.js)
+
+![automated_testing_result_navbar](documentation/docs_images/automated_testing_result_navbar.png)
 
 *<span style="color: blue;">[Back to Content](#content)</span>*
