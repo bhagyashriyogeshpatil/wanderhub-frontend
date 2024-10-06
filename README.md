@@ -29,6 +29,11 @@ The frontend, built with React, is designed to be clean, responsive, and user-fr
   - [Reusable Components](#reusable-components)
   - [CRUD Functionality](#CRUD-functionality)
 - [Testing](#testing)
+- [Deployment](#deployment)
+  - [Version Control](#version-control)
+  - [Deploying to Heroku](#deploying-to-heroku)
+  - [How to Fork](#how-to-fork)
+  - [How to Clone](#how-to-clone)
 ---
 
 ## Introduction
@@ -802,3 +807,103 @@ This section explains how to test the application and documents any bugs found d
 Please refer to [TESTING.md](/TESTING.md) for details.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*  
+
+## Deployment
+
+### Version Control
+- The site was created using the Gitpod editor and pushed to github to the remote repository '[Wander Hub Frontend](https://github.com/bhagyashriyogeshpatil/wanderhub-frontend/tree/main)'.
+- The following git commands were used throughout development to push code to the remote repository:
+
+  - `git add .` - This command was used to add all modified files to the staging area before committing.
+  - `git commit -m "commit message"` - This command was used to commit the staged changes to the local repository.
+  - `git push` - This command was used to push the committed changes to the remote repository on GitHub.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
+
+### Deploying to Heroku
+
+#### **Prerequisites**
+- Ensure you have a Heroku account. If not, sign up at [Heroku](https://id.heroku.com/login).
+- Ensure you have your project set up with all necessary dependencies listed in `requirements.txt`
+
+#### **Steps to Deploy**
+  - **Add Dependencies**
+    - Run the following command in your project directory to create a `requirements.txt` file that includes all external libraries:
+    ```bash
+    pip freeze > requirements.txt
+    ```
+  - **Create a New Heroku App**
+    - Log into your Heroku account and go to the **Dashboard**.
+    - Click the New button and select `Create new app`.
+    - Give your app a unique name and choose the region (EU or USA) closest to you.
+    - Once done, click `Create app`.
+  - **Deploy the App**
+    - Select the `Deploy` tab at the top of the page
+    - Choose `GitHub` from the **Deployment method** options
+    - Type the name of your GitHub project and click `Search`
+    - Scroll down and select the **Manual deployment** method
+    - (Optional) Enable **Automatic deployment** to automatically update the app each time you push code to GitHub
+    - Click on **Deploy Branch** to deploy the current state of your branch
+    - Wait for the Build to Finish
+    - Once you see "Deployed to Heroku" in the logs, click **Open App** to see your live app.
+
+#### **Connecting Frontend to API**
+- **Frontend Setup**
+  - In your frontend workspace, run: 
+  ```bash
+  npm install axios
+  ```
+  - Create a folder named `API` and within it, create a file called `axiosDefaults.js`
+  - In `axiosDefaults.js`, import `axios` and set up your base URL:
+  ```javascript
+  import axios from 'axios';
+
+  axios.defaults.baseURL = 'https://your-deployed-api-url.herokuapp.com';
+  axios.defaults.headers['Content-Type'] = 'multipart/form-data';
+  axios.defaults.withCredentials = true;
+  ```
+  - Import `axiosDefaults.js` into your main `App.js` file to make it available throughout your application.
+
+#### **Additional Setup**
+- Update package.json, add this to the "scripts" section:
+  ```json
+  "heroku-prebuild": "npm install -g serve"
+  ```
+- Add a **Procfile** at the root of your project with this content:
+  ```makefile
+  web: serve -s build
+  ```
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
+
+### How to Fork
+Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea. In order to protect the main branch while you work on something new, essential when working as part of a team or when you want to experiment with a new feature, you will need to fork a branch.
+- Log in (or sign up) to Github.
+- Go to the selected repository. 
+- Click the Fork button in the top right corner and select create a fork.
+- One can change the name of the fork and add description
+- Choose to copy only the main branch or all branches to the new fork.
+- Click Create a Fork. A repository should appear in your GitHub
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
+
+### How to Clone
+Cloning a GitHub repository creates a local copy on your machine, allowing you to sync between the two locations. Here are the steps:
+
+- Navigate to the GitHub Repository you want to clone to use locally.
+- Click on the code drop down button.
+- Click on HTTPS.
+- Copy the repository link to the clipboard.
+- Open your IDE of choice (git must be installed for the next steps). 
+- Navigate to the directory where you want the clone to be created.
+- Type `git clone`, and then paste the URL you copied previously. Press Enter to create your local clone.
+
+Install Dependencies:
+
+`npm install`
+
+Run Application:
+
+`npm start`
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
