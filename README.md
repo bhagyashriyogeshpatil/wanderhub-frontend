@@ -26,6 +26,8 @@ The frontend, built with React, is designed to be clean, responsive, and user-fr
       - [Milestones Overview](#milestones-overview)
 - [The Structure Plane](#the-structure-plane)
   - [Current Features](#current-features)
+  - [Reusable Components](#reusable-components)
+  - [CRUD Functionality](#CRUD-functionality)
 - [Testing](#testing)
 ---
 
@@ -719,6 +721,77 @@ Clicking the Add Post icon takes users to the post creation form.
 - Overall, the Not Found Page feature ensures a smooth experience, even when errors occur.
 
 ![notfound_page_image](documentation/docs_images/notfound_page_image.png)
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+### Reusable Components
+
+- The Reusable Components feature makes the code cleaner, reduces repetition, and simplifies updates. Here are some important components used throughout the site:
+- **Key Components:**
+  - `NavBar.js`
+    - This component is used on every page to provide consistent navigation, helping users easily move between different sections of the site.
+  - `Asset.js`
+    - The Asset component shows a loading spinner while content is being processed. It is used on pages like:
+      - ProfilePage.js
+      - PopularProfiles.js
+      - PostCreateForm.js
+      - PostPage.js
+      - PostsPage.js
+  - `Avatar.js`
+    - The Avatar component displays profile images in different areas like posts, comments, and user profiles. 
+    - It allows users to click on the avatar to view the creator's profile, making interactions more personalized.
+  - `MoreDropdown.js`
+    - This component is used in forms that allow users to update or delete items. It has a simple design, making it suitable for small forms like comments without crowding the page.
+    - The MoreDropdown is used for editing or deleting posts and comments and for updating user profiles.
+- Using these reusable components keeps the code organized and provides a smooth experience for users on the site.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+### CRUD Functionality
+
+- The CRUD (Create, Read, Update, Delete) features are important for the WanderHub website, helping users manage their travel posts and interact with content. This section explains how users can create, view, edit, and remove posts and comments, as well as manage their profiles.
+
+#### **1. Posts**
+- **Create Posts**
+  - As a logged-in user, creating new travel posts allows sharing experiences with others.
+  - Users can access the "Add Post" feature from the navigation menu. The interface includes fields for entering the post title, content, and selecting an image, along with specifying the place and region. After submitting the form, the post will appear on the Home page(Posts page) and on the user's profile.
+- **Read Posts**
+  - Users can view all posts created by others.
+  - Viewing Posts: Posts are displayed on the home page, showcasing the most recent content. Each post includes an image, title, content, place, region, and the date it was created or updated.
+  - Post Detail View: Users can click on any post to see its detailed view, which includes features like liking, commenting, and saving posts.
+- **Update Posts**
+  - Users can edit their existing posts to correct or enhance them.
+  - Access the edit option from the post detail view. The edit form will be pre-filled with the current post information, allowing users to modify the title, content, images, and location details. After submitting, the changes will reflect on the user’s profile and the main feed.
+- **Delete Posts**
+  - Users can delete their posts if they no longer wish to display them.
+  - The delete option is available on posts in both the home page and the user profile page. After clicking the delete icon, the post will be permanently removed.
+
+#### **2. Comments**
+- The CRUD functionality also applies to comments, allowing users to engage with posts effectively.
+- **Create Comments**
+  - Users can leave comments on posts to share thoughts or ask questions.
+  - Comments can be added in the comments section of a post detail view. After typing their comment in the comment box and clicking the "Post" button, the comment will be added under the respective post and visible to all users.
+- **Read Comments**
+  - Users can view comments on posts to see feedback from others.
+  - Viewing Comments: All comments are displayed below each post in the post detail view.
+- **Update Comments**
+  - Users can edit their comments to correct mistakes or add more information.
+  - Users can select the edit option next to their comment. The comment box will display the current text, allowing for modifications. After submitting the edited comment, it will update immediately.
+- **Delete Comments**
+  - Users can delete their comments if they no longer wish to keep them.
+  - The delete option is located next to comments. After clicking the delete icon,  the comment will be permanently deleted.
+
+#### **3. Profiles**
+- **Create Profiles**
+  - When a user signs up for the WanderHub website, a new profile is created. This involves entering information such as username, password and confirm password.
+- **Read Profiles**
+  - Users can view their own profile information as well as profiles of other users. This allows them to see details such as posts shared by the user and other relevant information.
+- **Update Profiles**
+  - Users can update their profile details, including username, password, and profile picture. This feature is crucial for ensuring that users can keep their information current and relevant.
+- **(No Delete)**
+  - The current project does not implement the option for users to delete their profiles. Users will continue to maintain their profiles unless they decide to stop using the platform, in which case their profiles will remain inactive but not deleted.
+
+- The CRUD functionality significantly enhances the user experience by providing essential tools for managing posts and comments. It ensures users have full control over their content while enabling seamless interaction within the WanderHub community.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
