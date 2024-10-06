@@ -667,6 +667,26 @@ Clicking the Add Post icon takes users to the post creation form.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
+#### **Form Error Handling**
+- The Form Error Handling feature provides users with clear, immediate feedback when they submit incomplete or incorrect information in a form.
+- It checks each field as the user fills it out and shows an error message right below the field if something is wrong. Required fields must be completed before the form can be submitted.
+- In the Add Post form, you must fill out the Title, Image, Content, and Place fields. For the Edit Profile form, the required fields are Username, Email, and Password. There are also specific rules to follow, like making sure uploaded images are in JPG format, and that passwords are long enough and match the confirmation field.
+- If there’s a specific problem, such as an invalid email address or mismatched passwords, a message will appear, and the field with the error will be highlighted to make it easy to spot.  Common error messages include things like "This field is required" or "Please enter a valid email address."
+- Users won’t be able to submit the form until all errors are fixed, and if they try, additional messages will guide them on what needs to be corrected.
+- Once all errors are resolved, the form can be submitted successfully, and the user will be redirected to another page. 
+- There’s also a "Cancel" button on each form in case the user wants to exit without saving. 
+- This feature makes it easier for users to fix mistakes and ensures that forms are submitted correctly.
+
+![form_error_handling_signup](documentation/docs_images/form_error_handling_signup.png)
+
+![form_error_handling_signin](documentation/docs_images/form_error_handling_signin.png)
+
+![form_error_handling_add_post](documentation/docs_images/form_error_handling_add_post.png)
+
+![form_image_error_handling_add_post](documentation/docs_images/form_image_error_handling_add_post.png)
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
 ## Testing
 
 This section explains how to test the application and documents any bugs found during development, along with their fixes. It helps keep track of the application's quality and improvements.
