@@ -34,6 +34,10 @@ The frontend, built with React, is designed to be clean, responsive, and user-fr
   - [Deploying to Heroku](#deploying-to-heroku)
   - [How to Fork](#how-to-fork)
   - [How to Clone](#how-to-clone)
+- [Technologies Used](#technologies-used)
+    - [Programming Languages](#programming-languages)
+    - [Frameworks, Libraries, and Dependencies](#frameworks-libraries-and-dependencies)
+    - [Tools and Services](#tools-services)
 ---
 
 ## Introduction
@@ -905,5 +909,56 @@ Install Dependencies:
 Run Application:
 
 `npm start`
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
+
+## Technologies Used
+
+### Programming Languages
+- [CSS](https://en.wikipedia.org/wiki/CSS) is applied to style the application, enhancing the user interface..
+- [JavaScript](https://sv.wikipedia.org/wiki/Javascript) adds interactivity to web pages, improving the user experience.
+- [JSX](https://legacy.reactjs.org/docs/faq-build.html#gatsby-focus-wrapper) & [Intro JSX](https://legacy.reactjs.org/docs/introducing-jsx.html)
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*   
+
+### Frameworks, Libraries, and Dependencies
+- [React 17.0.2](https://legacy.reactjs.org/docs/getting-started.html) - A JavaScript library for building user interfaces. An older version was chosen to stay inline with all other dependencies used as part of the Moments walkthrough which provided a base that this project was then modelled on.
+- [React Router 5.3.0](https://github.com/remix-run/react-router) - This fully-featured routing library for React allowed for seamless site navigation, greatly enhancing the user experience.
+- [React bootstrap 1.6.3](https://react-bootstrap-v4.netlify.app/) - A frontend framework built for react that provides common components. React bootstrap was chosen to help speed up the development of this project and allow time to focused elsewhere.
+- [Axios](https://axios-http.com/) - A promise-based HTTP client for both the browser and Node.js, Axios plays a key role in facilitating smooth communication between the frontend and backend. It was chosen for its ability to simplify HTTP requests to the REST API, eliminating the need to manually configure HTTP headers. Additionally, Axios supports 'interceptors', which are used to request a refresh token in the event of an HTTP 401 error. This feature enhances the user experience by keeping authenticated users signed in for up to 24 hours, rather than requiring them to sign in again after five minutes.
+- [jwt-decode 3.1.2](https://www.npmjs.com/package/jwt-decode) - Used for decoding JSON Web Tokens (JWT), this tool has been essential for maintaining secure user authentication between the frontend and backend.
+- [react-infinite-scroll-component](https://www.npmjs.com/package/react-infinite-scroll-component) - Implemented to enable the loading of additional data sets upon scrolling, especially when data surpasses pagination limits.
+- [Mock Service Worker (MSW) 0.35.0](https://mswjs.io/) - An API mocking library that intercepts HTTP requests, allowing front-end development and testing without the need for a live backend.
+- [React Testing Library 11.2.7](https://github.com/testing-library/react-testing-library) - Provides utilities for testing React components by simulating user interactions and verifying UI behaviors.
+- [Jest DOM 5.17.0](https://github.com/testing-library/jest-dom) - Extends Jest’s built-in assertions with custom matchers to test DOM elements more effectively.
+- [React Scripts 5.0.1](https://github.com/facebook/create-react-app/tree/main/packages/react-scripts) - Provides the standard scripts for running, building, and testing the React app using Create React App (CRA)
+- [Node.js](https://nodejs.org/en) - A JavaScript runtime that includes a package manager (npm) used to install and manage project dependencies
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
+
+### Tools and Services
+
+- [Am I Responsive?](http://ami.responsivedesign.is/) is used to show the website image on a range of devices.
+- [Balsamiq](https://balsamiq.com/) is used to create wireframes.
+- [Cloudinary JPG to WEBP](https://cloudinary.com/tools/jpg-to-webp): Used to convert image to WEBP.
+- [Coolors](https://coolors.co/) is used to create the colour scheme palette
+- [CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) is used to check code ensuring that my CSS is error-free and adheres to the latest web standards
+- [Cloudinary](https://cloudinary.com/users/register_free) - A cloud service for storing, managing, and delivering images
+- [DevTools](https://developer.chrome.com/docs/devtools) to help in edit pages on-the-fly and diagnose problems quickly.
+- [Diffchecker - text](https://www.diffchecker.com/text-compare/) is used to check code snippets.
+- [Favicon.io](https://favicon.io/) is used to create favicon.
+- [Freepik](https://www.freepik.com/) - A site for free and paid graphics and photos.
+- [Font Awesome](https://fontawesome.com/) is used for the iconography on the website.
+- [Git](https://git-scm.com/) is used for version control.
+- [Gitpod](https://gitpod.io) streamlines your development process by providing a pre-configured, cloud-based development environment that's instantly ready for coding.
+- [Github](https://github.com/) is essential for version control, allowing you to track changes, collaborate with others (if applicable), and secure online code storage.
+- [Google Fonts](https://fonts.google.com/) is a catalog of free, open-source fonts. Used for typography.
+- [Heroku](https://www.heroku.com) ia a platform for deploying and hosting web applications.
+- [Markup Validation Service](https://validator.w3.org/) is used to check code ensuring that my HTML is error-free and adheres to the latest web standards.
+- [Logo.com](https://logo.com/) - A platform for creating custom logos, icons
+- [Pexels](https://www.pexels.com) - A site for free stock photos and videos.
+- [Simpleimageresizer](https://www.simpleimageresizer.com/resize/webp): A tool for quickly resizing images online.
+- [Wave](https://wave.webaim.org) is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities.
+
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
