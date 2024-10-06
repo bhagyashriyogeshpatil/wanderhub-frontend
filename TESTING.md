@@ -9,14 +9,18 @@ Return back to the [README.md](README.md) file.
     - [Test environment](#test-environment)
     - [Browser compatibility](#browser-compatibility)
     - [Responsiveness](#responsiveness)
+    - [Accessibility Features](#accessibility-features)
 - [Validator Testing](#validator-testing)
     - [HTML Validation](#html-validation)
     - [CSS Validation](#css-validation)
     - [JavaScript Validation](#javascript-validation)
+- [Lighthouse](#lighthouse)
 - [Manual test](#manual-test)
     - [Application Functionality Testing](#application-functionality-testing)
     - [Error Handling Testing](#error-handling-testing )
 - [Automated Testing](#automated-testing)
+- [Bug Overview](#bug-overview)
+    - [Solved Bugs](#solved-bugs)
 ---
 ## Testing overview & environment
 
@@ -60,6 +64,13 @@ The following breakpoints were considered during testing:
 | Large             | `lg`       | `≥ 992px`         |
 | Extra Large       | `xl`       | `≥ 1200px`        |
 | Extra Extra Large | `xxl`      | `≥ 1400px`        |
+
+### Accessibility Features
+This React project prioritizes accessibility by utilizing semantic HTML, ensuring sufficient color contrast, and providing keyboard navigation for all interactive elements. 
+
+The application complies with Web Content Accessibility Guidelines (WCAG), with no critical errors detected by the [WAVE accessibility tool](https://wave.webaim.org/).
+
+![wave-view](documentation/testing/wave-view.png)
 
 *<span style="color: blue;">[Back to Content](#content)</span>*
 
@@ -120,6 +131,114 @@ The following breakpoints were considered during testing:
 - As code is written in the editor (like Gitpod), ESLint shows errors and warnings directly in the code, helping to fix issues immediately.
 - When `npm start` is run, ESLint checks the code again and prevents the app from building if there are any critical errors.
 - Throughout the development of Wander Hub, ESLint has been very helpful in finding and fixing code issues. This has kept the codebase clean and in line with good JavaScript practices. When the code compiles without problems, it runs on the development server smoothly, without errors or warnings.
+
+*<span style="color: blue;">[Back to Content](#content)</span>*
+
+## Lighthouse
+
+### Home Page
+<details>
+  <summary>Home Page - Desktop</summary>
+    
+![home-page-lighthouse-desktop](documentation/testing/home-page-lighthouse-desktop.png)
+</details>
+
+<details>
+  <summary>Home Page - Mobile</summary>
+    
+![home-page-lighthouse-mobile](documentation/testing/home-page-lighthouse-mobile.png)
+</details>
+
+### Sign In Page
+<details>
+  <summary>Sign In Page - Desktop</summary>
+    
+![sign_in_page_lighthouse_desktop](documentation/testing/sign_in_page_lighthouse_desktop.png)
+</details>
+
+<details>
+  <summary>Sign In Page - Mobile</summary>
+    
+![sign_in_page_lighthouse_mobile](documentation/testing/sign_in_page_lighthouse_mobile.png)
+</details>
+
+### Sign Up Page
+<details>
+  <summary>Sign Up Page - Desktop</summary>
+    
+![sign_up_page_lighthouse_desktop](documentation/testing/sign_up_page_lighthouse_desktop.png)
+</details>
+
+<details>
+  <summary>Sign Up Page - Mobile</summary>
+    
+![sign_up_page_lighthouse_mobile](documentation/testing/sign_up_page_lighthouse_mobile.png)
+</details>
+
+### Posts Detail View
+<details>
+  <summary>Posts Detail View - Desktop</summary>
+    
+![postdetail_page_lighthouse_desktop](documentation/testing/postdetail_page_lighthouse_desktop.png)
+</details>
+
+<details>
+  <summary>Posts Detail View - Mobile</summary>
+    
+![postdetail_page_lighthouse_mobile](documentation/testing/postdetail_page_lighthouse_mobile.png)
+</details>
+
+### Profile Page
+<details>
+  <summary>Profile Page - Desktop</summary>
+    
+![profile_page_lighthouse_desktop](documentation/testing/profile_page_lighthouse_desktop.png)
+</details>
+
+<details>
+  <summary>Profile Page - Mobile</summary>
+    
+![profile_page_lighthouse_mobile](documentation/testing/profile_page_lighthouse_mobile.png)
+</details>
+
+### Feed Page
+<details>
+  <summary>Feed Page - Desktop</summary>
+    
+![feed_page_lighthouse_desktop](documentation/testing/feed_page_lighthouse_desktop.png)
+</details>
+
+<details>
+  <summary>Feed Page - Mobile</summary>
+    
+![feed_page_lighthouse_mobile](documentation/testing/feed_page_lighthouse_mobile.png)
+</details>
+
+### Saved Page
+<details>
+  <summary>Saved Page - Desktop</summary>
+    
+![saved_page_lighthouse_desktop](documentation/testing/saved_page_lighthouse_desktop.png)
+</details>
+
+<details>
+  <summary>Saved Page - Mobile</summary>
+    
+![saved_page_lighthouse_mobile](documentation/testing/saved_page_lighthouse_mobile.png)
+</details>
+
+### Liked Page
+<details>
+  <summary>Liked Page - Desktop</summary>
+    
+![liked_page_lighthouse_desktop](documentation/testing/liked_page_lighthouse_desktop.png)
+</details>
+
+<details>
+  <summary>Liked Page - Mobile</summary>
+    
+![liked_page_lighthouse_mobile](documentation/testing/liked_page_lighthouse_mobile.png)
+</details>
 
 *<span style="color: blue;">[Back to Content](#content)</span>*
 
@@ -214,5 +333,122 @@ The following breakpoints were considered during testing:
 - Link to test files can be found here: [NavBar](https://github.com/bhagyashriyogeshpatil/wanderhub-frontend/blob/main/src/components/__tests__/NavBar.test.js)
 
 ![automated_testing_result_navbar](documentation/docs_images/automated_testing_result_navbar.png)
+
+*<span style="color: blue;">[Back to Content](#content)</span>*
+
+## Bug Overview
+
+### Solved Bugs
+
+- **1.** Uncaught Runtime Error in SignUpForm Component 
+
+  - **Issue:** When using the SignUpForm component in the frontend, a runtime error occurred:
+  ```javascript
+  Cannot read properties of undefined (reading 'username') 
+  TypeError: Cannot read properties of undefined (reading 'username')
+  ```
+  - This error happens because the `username` property of the `errors` state is being accessed when it is undefined.  
+
+  - **Fix:** I updated the CORS configuration in the API's `settings.py` file. The new code is:
+  ```python 
+  if 'CLIENT_ORIGIN_DEV' in os.environ:
+      CORS_ALLOWED_ORIGIN_REGEXES = [r"^https://.*\.codeinstitute-ide\.net$",]
+  ```
+  - This change allows the frontend to connect properly with the backend, fixing the error in the SignUpForm component.
+
+
+- **2.** Image Upload Issue in PostCreateForm Component
+  - **Issue:** There was a problem with how images were being added to the form in the `PostCreateForm` component. The previous code used this line: 
+
+    ```javascript
+    formData.append("image", imageInput.current.files[0]);
+    ```
+    This could cause errors if no image was selected, as it would try to submit an undefined value.
+  - **Fix:** The code was updated to check if an image file is selected before adding it to the form data. The new code looks like this:
+    ```javascript
+    if (imageInput.current.files[0]) { 
+    formData.append("image", imageInput.current.files[0]);
+    }
+    ```
+
+- **3.** Jest Failing to Parse axios Due to ES Module Syntax
+  - **Issue:** While running tests using Jest, I have encounter the following error:
+    ```javscript
+    SyntaxError: Cannot use import statement outside a module
+    ```
+    This error occurs because axios uses ES module syntax (import) by default, but Jest expects CommonJS (require) modules.
+  - **Fix:** Use CommonJS Version of axios -  To fix this issue, update the package.json file with the following Jest configuration:
+    ```json
+    "jest": { 
+    "moduleNameMapper": { 
+    "^axios$": "axios/dist/node/axios.cjs" 
+    }
+    }
+    ```
+    This tells Jest to use the CommonJS version of axios, which resolves the issue.
+    [Refer Stackoverflow](https://stackoverflow.com/questions/75523632/cannot-use-import-statement-outside-a-module-with-axios-in-react/76458512#76458512)
+
+- **4.** NavBar Test Fails Due to Timing Issues After Logout
+  - **Issue:** The test that checks if the "Sign in" and "Sign up" buttons show up again after logging out sometimes fails because of timing issues. The `findByRole` method waits for the buttons to appear, but it might not wait long enough if the UI takes time to update after logging out. This can cause the test to pass or fail randomly.
+  - **Fix:** To fix this, the `waitFor` method is used to wait until the "Sign in" and "Sign up" buttons are visible after clicking "Sign out." This ensures the test waits properly for the UI to update.
+
+- **5.** Deprecation Warning: `ReactDOMTestUtils.act` in Tests After Update
+  - **Issue:** 
+    - After updating the code, the following warning appears during testing:
+  `Warning: ReactDOMTestUtils.act is deprecated in favor of React.act. Import act from react instead of react-dom/test-utils.`
+    - This happens when running tests in `NavBar.test.js`, even though all tests pass. The issue seems related to how `fireEvent` triggers DOM updates.
+  - **Fix:** 
+    - I reviewed the imports to ensure that `act` is imported from React instead of `react-dom/test-utils`. I updated the import statement to:
+        ```javascript
+        import { act } from 'react';
+        ```
+    - I wrapped events in `act()` to properly handle state updates. I used `act()` to wrap `fireEvent.click()` when simulating user actions:
+        ```javascript
+        act(() => {
+        fireEvent.click(signOutLink);
+        });
+        ```
+
+- **6.** Deprecated findDOMNode Warning in Development
+  - **Issue:** Using `React.StrictMode` in the application caused a deprecated `findDOMNode` error during development.
+  - **Fix:** Removed `React.StrictMode` from `index.js` to eliminate the error and improve the development experience.
+
+- **7.** Invalid DOM Property Warning
+  - **Issue:** 
+    - When running the application, I encounter the following warning in the console:
+  ``` Warning: Invalid DOM property `class`. Did you mean `className`? ```
+    - This happens because React uses `className` instead of `class` to assign CSS classes to elements.
+  - **Fix:** To resolve this issue, I reviewed the components for any use of the `class` attribute and update it to `className`.
+
+- **8.** Dependency Conflict When Installing jwt-decode
+  - **Issue:** 
+    - When trying to install jwt-decode@3.1.2, I encountered an error due to a conflict with @testing-library/react. The project was using React version 17.0.2, which was incompatible with @testing-library/react@13.4.0.
+    ```bash
+    npm error code ERESOLVE
+    npm error ERESOLVE could not resolve
+    ...
+    Could not resolve dependency:
+    npm error peer react@"^18.0.0" from @testing-library/react@13.4.0
+    ```
+  - **Fix:**
+    - To resolve this issue, I downgraded @testing-library/react to a compatible version
+    ```bash
+    npm install @testing-library/react@^11.2.7
+    ```
+    - Then, I successfully installed jwt-decode:
+    ```bash
+    npm install jwt-decode@3.1.2
+    ```
+    - Downgrading @testing-library/react resolved the conflict, allowing the installation of jwt-decode.
+
+- **9.** Bio Field Not Displaying on Profile Page
+  - **Issue:** The `bio` field was not showing on the Profile Page after editing the profile. API response returned an empty `bio` field after form submission.
+  - **Fix:** Renamed the `content` field to `bio` in the ProfileEditForm component. Ensured the correct `bio` field is submitted to the API during form submission. Tested and confirmed the `bio` is now updating and displaying properly.
+
+- **10.** TypeError: (0 , _react2.act) is not a function
+  - **Issue:** When running tests for the `NavBar` component, you may encounter a `TypeError` indicating that `(0 , _react2.act)` is not a function. This error occurs due to an incorrect import of the `act` function.
+  - **Fix:** 
+    - To resolve this issue, in `src/components/__tests__/NavBar.test.js` file, locate the import statement for `act` and change it from `import { act } from 'react';` to` import { act } from '@testing-library/react';`. 
+    - After making this change, save the file and run the tests again using the command npm test. This should fix the issue and the tests to pass.
 
 *<span style="color: blue;">[Back to Content](#content)</span>*
