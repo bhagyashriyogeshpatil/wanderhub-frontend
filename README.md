@@ -35,9 +35,12 @@ The frontend, built with React, is designed to be clean, responsive, and user-fr
   - [How to Fork](#how-to-fork)
   - [How to Clone](#how-to-clone)
 - [Technologies Used](#technologies-used)
-    - [Programming Languages](#programming-languages)
-    - [Frameworks, Libraries, and Dependencies](#frameworks-libraries-and-dependencies)
-    - [Tools and Services](#tools-services)
+  - [Programming Languages](#programming-languages)
+  - [Frameworks, Libraries, and Dependencies](#frameworks-libraries-and-dependencies)
+  - [Tools and Services](#tools-services)
+- [Credits and Acknowledgements](#credits-and-acknowledgements)
+  - [Credits](#credits)
+  - [Acknowledgements](#acknowledgements)
 ---
 
 ## Introduction
@@ -960,5 +963,22 @@ Run Application:
 - [Simpleimageresizer](https://www.simpleimageresizer.com/resize/webp): A tool for quickly resizing images online.
 - [Wave](https://wave.webaim.org) is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities.
 
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
+
+## Credits and Acknowledgements
+
+### Credits 
+- This project was built upon the foundational learning materials provided by Code Institute, specifically the Advanced Front-end "Moments" walkthrough project, which served as both inspiration and a template.
+- The code has been customized and expanded to enhance functionality and improve user experience.
+-  I customized and expanded the code with guidance from the official [React](https://react.dev/learn) and [React-Bootstrap documentation](https://react-bootstrap-v4.netlify.app/).
+- Logo and favicon were created using [Logo.com](https://logo.com/), a platform for custom logo design.
+- Images and videos were sourced from [Pexels](https://www.pexels.com) and [Freepik](https://www.freepik.com/)
+
+
+### Acknowledgements
+- I am grateful to the Code Institute's Tutor support and and slack community for solving all my doubts.
+- I appreciate my mentor, Jubril Akolade, for his guidance.
+- I'm also grateful to my family and friends for testing the app and giving valuable feedback.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>* 
