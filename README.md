@@ -4,7 +4,7 @@ Wander Hub is a social media platform for travelers to share their trips, explor
 
 The frontend, built with React, is designed to be clean, responsive, and user-friendly. The project is developed as a Portfolio Project 5 (Advanced Front End / React) for the Code Institute's Full Stack Software Development Course. This React project focuses on building a responsive and interactive frontend, allowing users to easily perform CRUD functionality like adding, editing, and deleting posts, while connecting to the backend API to handle data management.
 
-![wander-hub-mockup-image]()
+![wander-hub-mockup-image](documentation/docs_images/wander-hub-mockup-image.png)
 
    - Link to the live website: [Wander Hub Frontend](https://wanderhub-frontend-56da935583f2.herokuapp.com/)
    - Link to the live API: [Wander Hub API](https://wanderhub-api-backend-8af792a9ebf9.herokuapp.com/)
@@ -28,6 +28,12 @@ The frontend, built with React, is designed to be clean, responsive, and user-fr
   - [Current Features](#current-features)
   - [Reusable Components](#reusable-components)
   - [CRUD Functionality](#CRUD-functionality)
+- [Frontend Design](#frontend-design)
+  - [Wireframes](#wireframes)
+  - [Color Scheme](#color-scheme)
+  - [Typography](#typography)
+  - [Imagery](#imagery)
+  - [Responsiveness](#responsiveness) 
 - [Testing](#testing)
 - [Deployment](#deployment)
   - [Version Control](#version-control)
@@ -807,6 +813,96 @@ Clicking the Add Post icon takes users to the post creation form.
 
 *<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
 
+## Frontend Design
+
+### Wireframes
+- The wireframes for Wander Hub were created using [Balsamiq](https://balsamiq.com/) to plan the basic layout and interface for the main pages. These wireframes helped guide the development of a responsive and accessible web interface with a mobile-first approach. Although the final design may differ from the wireframes due to changes during development, they provided a helpful starting point.
+
+#### Sign In Page
+- This wireframe is for desktop computers (large screens). The mobile wireframe would look similar but would not show the image. Instead, it would only display the sign-in form. The hamburger menu would be open, showing options for Home, Sign In, and Sign Out.
+
+![sign_in_page_wireframe](documentation/wireframe/sign_in_page_wireframe.png)
+
+#### Sign Up Page
+- 
+
+![sign_out_page_wireframe](documentation/wireframe/sign_up_page_wireframe.png)
+
+#### Home Page (Posts Page)
+
+- **Home Page for Desktop (Authorized Users)**
+
+![home_page_authorised_users_wireframe](documentation/wireframe/home_page_authorised_users_wireframe.png)
+
+- **Home Page for Desktop (Unauthorized Users)**
+
+![home_page_unauthorised_users_wireframe](documentation/wireframe/home_page_unauthorised_users_wireframe.png)
+
+- **Home Page for Mobile (Unauthorized/authorized Users)**
+  - The difference between authorized and unauthorized users is shown using a tooltip. The design stays the same in both cases.
+
+![home_page_mobile_wireframe](documentation/wireframe/home_page_mobile_wireframe.png)
+
+#### Post Detail Page
+
+- **Post Detail for Desktop (Authorized Users)**
+
+![post_detail_page_authorised_wireframe](documentation/wireframe/post_detail_page_authorised_wireframe.png)
+
+- **Post Detail for Desktop (Unauthorized Users)**
+
+![post_detail_page_unauthorised_wireframe](documentation/wireframe/post_detail_page_unauthorised_wireframe.png)
+
+- **Post Detail for Mobile**
+  - The difference between authorized and unauthorized users is shown using a tooltip. The design stays the same in both cases.
+
+![post_detail_page_mobile_wireframe](documentation/wireframe/post_detail_page_mobile_wireframe.png)
+
+#### Add Post and Edit Post Pages
+  - The design for adding a post and editing a post is the same. The differences are highlighted where necessary. In the mobile wireframes, the design would also be similar, but the upload image icon would be stacked on top of the form on smaller screens.
+
+![add_post_page_wireframe](documentation/wireframe/add_post_page_wireframe.png)
+
+#### Profile Page
+
+- **Profile Page for Desktop (Authorized Users)**
+  - The "Follow" button appears on the profile page in place of the three dots if the user does not own the profile. The design for mobile is responsive and uses Bootstrap styles.
+
+![profile_page_authorised_wireframe](documentation/wireframe/profile_page_authorised_wireframe.png)
+
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+### Color Scheme
+- The color scheme was created using [Coolors](https://coolors.co/)
+
+![Color palette](documentation/docs_images/wanderhub_color_palette.png)
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+### Typography
+- The project uses two primary fonts:
+  - **Montserrat:** A clean and modern sans-serif font used for the main body text, navigation links, and buttons. It ensures readability and clarity across different devices.
+  - **Homemade Apple:**  A cursive, handwritten style that is specifically used for the Sign In and Sign Up headings, adding a more personal and creative touch.
+- These fonts are imported from [Google Fonts](https://fonts.google.com/) to ensure a consistent typographic style throughout the site.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+### Imagery
+- The images in this project are sourced from [Pexels](https://www.pexels.com) and [Freepik](https://www.freepik.com/)
+- Logo and favicon were created using [Logo.com](https://logo.com/), a platform for custom logo design.
+- All imagery was specifically selected to correlate with the main purpose of the website and to provide users with an imagery representation of the travel content, ultimately increasing the impact of the design.
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*
+
+### Responsiveness
+
+- The website's design is responsive, tested across multiple devices to ensure a consistent and user-friendly experience regardless of device size.
+
+![wander-hub-mockup-image](documentation/docs_images/wander-hub-mockup-image.png)
+
+*<span style="color: blue;">[Back to Content](#table-of-contents)</span>*  
+
 ## Testing
 
 This section explains how to test the application and documents any bugs found during development, along with their fixes. It helps keep track of the application's quality and improvements.
@@ -973,7 +1069,7 @@ Run Application:
 - The code has been customized and expanded to enhance functionality and improve user experience.
 -  I customized and expanded the code with guidance from the official [React](https://react.dev/learn) and [React-Bootstrap documentation](https://react-bootstrap-v4.netlify.app/).
 - Logo and favicon were created using [Logo.com](https://logo.com/), a platform for custom logo design.
-- Images and videos were sourced from [Pexels](https://www.pexels.com) and [Freepik](https://www.freepik.com/)
+- Images were sourced from [Pexels](https://www.pexels.com) and [Freepik](https://www.freepik.com/)
 
 
 ### Acknowledgements
